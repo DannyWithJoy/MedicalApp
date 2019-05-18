@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302B2924228FF5D800EFD4DA /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B2923228FF5D800EFD4DA /* HomeCollectionViewController.m */; };
+		302B2928228FFDFE00EFD4DA /* SkinExaminationReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B2926228FFDFE00EFD4DA /* SkinExaminationReportViewController.m */; };
+		302B2929228FFDFE00EFD4DA /* SkinExaminationReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302B2927228FFDFE00EFD4DA /* SkinExaminationReportViewController.xib */; };
 		30A75275228FD1EF00836EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A75274228FD1EF00836EBF /* AppDelegate.m */; };
-		30A75278228FD1EF00836EBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A75277228FD1EF00836EBF /* ViewController.m */; };
 		30A7527B228FD1EF00836EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A75279228FD1EF00836EBF /* Main.storyboard */; };
 		30A7527D228FD1F000836EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A7527C228FD1F000836EBF /* Assets.xcassets */; };
 		30A75280228FD1F000836EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A7527E228FD1F000836EBF /* LaunchScreen.storyboard */; };
@@ -18,11 +20,14 @@
 
 /* Begin PBXFileReference section */
 		077BB7306071F70F89A8E915 /* libPods-Medical.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Medical.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		302B2922228FF5D800EFD4DA /* HomeCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewController.h; sourceTree = "<group>"; };
+		302B2923228FF5D800EFD4DA /* HomeCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewController.m; sourceTree = "<group>"; };
+		302B2925228FFDFE00EFD4DA /* SkinExaminationReportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkinExaminationReportViewController.h; sourceTree = "<group>"; };
+		302B2926228FFDFE00EFD4DA /* SkinExaminationReportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkinExaminationReportViewController.m; sourceTree = "<group>"; };
+		302B2927228FFDFE00EFD4DA /* SkinExaminationReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkinExaminationReportViewController.xib; sourceTree = "<group>"; };
 		30A75270228FD1EF00836EBF /* Medical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A75273228FD1EF00836EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30A75274228FD1EF00836EBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		30A75276228FD1EF00836EBF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		30A75277228FD1EF00836EBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		30A7527A228FD1EF00836EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30A7527C228FD1F000836EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A7527F228FD1F000836EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,8 +72,11 @@
 			children = (
 				30A75273228FD1EF00836EBF /* AppDelegate.h */,
 				30A75274228FD1EF00836EBF /* AppDelegate.m */,
-				30A75276228FD1EF00836EBF /* ViewController.h */,
-				30A75277228FD1EF00836EBF /* ViewController.m */,
+				302B2922228FF5D800EFD4DA /* HomeCollectionViewController.h */,
+				302B2923228FF5D800EFD4DA /* HomeCollectionViewController.m */,
+				302B2925228FFDFE00EFD4DA /* SkinExaminationReportViewController.h */,
+				302B2926228FFDFE00EFD4DA /* SkinExaminationReportViewController.m */,
+				302B2927228FFDFE00EFD4DA /* SkinExaminationReportViewController.xib */,
 				30A75279228FD1EF00836EBF /* Main.storyboard */,
 				30A7527C228FD1F000836EBF /* Assets.xcassets */,
 				30A7527E228FD1F000836EBF /* LaunchScreen.storyboard */,
@@ -84,7 +92,6 @@
 				AE398847120D90A850163D54 /* Pods-Medical.debug.xcconfig */,
 				3E63B46E063450A3620D29C3 /* Pods-Medical.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A75280228FD1F000836EBF /* LaunchScreen.storyboard in Resources */,
+				302B2929228FFDFE00EFD4DA /* SkinExaminationReportViewController.xib in Resources */,
 				30A7527D228FD1F000836EBF /* Assets.xcassets in Resources */,
 				30A7527B228FD1EF00836EBF /* Main.storyboard in Resources */,
 			);
@@ -255,7 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A75278228FD1EF00836EBF /* ViewController.m in Sources */,
+				302B2924228FF5D800EFD4DA /* HomeCollectionViewController.m in Sources */,
+				302B2928228FFDFE00EFD4DA /* SkinExaminationReportViewController.m in Sources */,
 				30A75283228FD1F000836EBF /* main.m in Sources */,
 				30A75275228FD1EF00836EBF /* AppDelegate.m in Sources */,
 			);
