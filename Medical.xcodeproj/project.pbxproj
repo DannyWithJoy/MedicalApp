@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		302B2924228FF5D800EFD4DA /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B2923228FF5D800EFD4DA /* HomeCollectionViewController.m */; };
-		302B2928228FFDFE00EFD4DA /* SkinExaminationReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302B2926228FFDFE00EFD4DA /* SkinExaminationReportViewController.m */; };
-		302B2929228FFDFE00EFD4DA /* SkinExaminationReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302B2927228FFDFE00EFD4DA /* SkinExaminationReportViewController.xib */; };
 		30A75275228FD1EF00836EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A75274228FD1EF00836EBF /* AppDelegate.m */; };
 		30A7527B228FD1EF00836EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A75279228FD1EF00836EBF /* Main.storyboard */; };
 		30A7527D228FD1F000836EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A7527C228FD1F000836EBF /* Assets.xcassets */; };
@@ -20,11 +17,6 @@
 
 /* Begin PBXFileReference section */
 		077BB7306071F70F89A8E915 /* libPods-Medical.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Medical.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		302B2922228FF5D800EFD4DA /* HomeCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewController.h; sourceTree = "<group>"; };
-		302B2923228FF5D800EFD4DA /* HomeCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewController.m; sourceTree = "<group>"; };
-		302B2925228FFDFE00EFD4DA /* SkinExaminationReportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkinExaminationReportViewController.h; sourceTree = "<group>"; };
-		302B2926228FFDFE00EFD4DA /* SkinExaminationReportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkinExaminationReportViewController.m; sourceTree = "<group>"; };
-		302B2927228FFDFE00EFD4DA /* SkinExaminationReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkinExaminationReportViewController.xib; sourceTree = "<group>"; };
 		30A75270228FD1EF00836EBF /* Medical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A75273228FD1EF00836EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30A75274228FD1EF00836EBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,11 +64,6 @@
 			children = (
 				30A75273228FD1EF00836EBF /* AppDelegate.h */,
 				30A75274228FD1EF00836EBF /* AppDelegate.m */,
-				302B2922228FF5D800EFD4DA /* HomeCollectionViewController.h */,
-				302B2923228FF5D800EFD4DA /* HomeCollectionViewController.m */,
-				302B2925228FFDFE00EFD4DA /* SkinExaminationReportViewController.h */,
-				302B2926228FFDFE00EFD4DA /* SkinExaminationReportViewController.m */,
-				302B2927228FFDFE00EFD4DA /* SkinExaminationReportViewController.xib */,
 				30A75279228FD1EF00836EBF /* Main.storyboard */,
 				30A7527C228FD1F000836EBF /* Assets.xcassets */,
 				30A7527E228FD1F000836EBF /* LaunchScreen.storyboard */,
@@ -163,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A75280228FD1F000836EBF /* LaunchScreen.storyboard in Resources */,
-				302B2929228FFDFE00EFD4DA /* SkinExaminationReportViewController.xib in Resources */,
 				30A7527D228FD1F000836EBF /* Assets.xcassets in Resources */,
 				30A7527B228FD1EF00836EBF /* Main.storyboard in Resources */,
 			);
@@ -181,53 +167,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Medical/Pods-Medical-resources.sh",
-				"${PODS_ROOT}/MaterialComponents/components/ActivityIndicator/src/MaterialActivityIndicator.bundle",
-				"${PODS_ROOT}/MaterialComponents/components/AppBar/src/MaterialAppBar.bundle",
-				"${PODS_ROOT}/MaterialComponents/components/BottomNavigation/src/MaterialBottomNavigation.bundle",
-				"${PODS_ROOT}/MaterialComponents/components/CollectionCells/src/MaterialCollectionCells.bundle",
-				"${PODS_ROOT}/MaterialComponents/components/Collections/src/MaterialCollections.bundle",
-				"${PODS_ROOT}/MaterialComponents/components/Dialogs/src/MaterialDialogs.bundle",
-				"${PODS_ROOT}/MaterialComponents/components/FeatureHighlight/src/MaterialFeatureHighlight.bundle",
-				"${PODS_ROOT}/MaterialComponents/components/PageControl/src/MaterialPageControl.bundle",
-				"${PODS_ROOT}/MaterialComponents/components/Snackbar/src/MaterialSnackbar.bundle",
-				"${PODS_ROOT}/MaterialComponents/components/Tabs/src/MaterialTabs.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_arrow_back.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_check.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_check_circle.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_chevron_right.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_color_lens.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_help_outline.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_info.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_more_horiz.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_radio_button_unchecked.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_reorder.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialIcons_ic_settings.bundle",
+				"${PODS_ROOT}/XLForm/XLForm/XLForm.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialActivityIndicator.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialAppBar.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialBottomNavigation.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCollectionCells.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCollections.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialDialogs.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialFeatureHighlight.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialPageControl.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialSnackbar.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialTabs.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_arrow_back.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_check.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_check_circle.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_chevron_right.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_color_lens.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_help_outline.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_info.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_more_horiz.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_radio_button_unchecked.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_reorder.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons_ic_settings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/XLForm.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -263,8 +209,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				302B2924228FF5D800EFD4DA /* HomeCollectionViewController.m in Sources */,
-				302B2928228FFDFE00EFD4DA /* SkinExaminationReportViewController.m in Sources */,
 				30A75283228FD1F000836EBF /* main.m in Sources */,
 				30A75275228FD1EF00836EBF /* AppDelegate.m in Sources */,
 			);
