@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		307026C6229A98D400D0B1A3 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307026C5229A98D400D0B1A3 /* HomeTableViewController.m */; };
+		307026CF229AA4F000D0B1A3 /* ReportCreatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307026CE229AA4F000D0B1A3 /* ReportCreatViewController.m */; };
+		307026D7229AE52A00D0B1A3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 307026D6229AE52A00D0B1A3 /* User.m */; };
+		307026DA229AE58700D0B1A3 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 307026D9229AE58700D0B1A3 /* Pet.m */; };
 		30A75275228FD1EF00836EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A75274228FD1EF00836EBF /* AppDelegate.m */; };
 		30A7527B228FD1EF00836EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A75279228FD1EF00836EBF /* Main.storyboard */; };
 		30A7527D228FD1F000836EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A7527C228FD1F000836EBF /* Assets.xcassets */; };
@@ -17,6 +21,14 @@
 
 /* Begin PBXFileReference section */
 		077BB7306071F70F89A8E915 /* libPods-Medical.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Medical.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		307026C4229A98D400D0B1A3 /* HomeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		307026C5229A98D400D0B1A3 /* HomeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		307026CD229AA4F000D0B1A3 /* ReportCreatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportCreatViewController.h; sourceTree = "<group>"; };
+		307026CE229AA4F000D0B1A3 /* ReportCreatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportCreatViewController.m; sourceTree = "<group>"; };
+		307026D5229AE52A00D0B1A3 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		307026D6229AE52A00D0B1A3 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		307026D8229AE58700D0B1A3 /* Pet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
+		307026D9229AE58700D0B1A3 /* Pet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
 		30A75270228FD1EF00836EBF /* Medical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A75273228FD1EF00836EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30A75274228FD1EF00836EBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		307026D4229AE4FE00D0B1A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				307026D5229AE52A00D0B1A3 /* User.h */,
+				307026D6229AE52A00D0B1A3 /* User.m */,
+				307026D8229AE58700D0B1A3 /* Pet.h */,
+				307026D9229AE58700D0B1A3 /* Pet.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		30A75267228FD1EE00836EBF = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +87,11 @@
 			children = (
 				30A75273228FD1EF00836EBF /* AppDelegate.h */,
 				30A75274228FD1EF00836EBF /* AppDelegate.m */,
+				307026D4229AE4FE00D0B1A3 /* Model */,
+				307026C4229A98D400D0B1A3 /* HomeTableViewController.h */,
+				307026C5229A98D400D0B1A3 /* HomeTableViewController.m */,
+				307026CD229AA4F000D0B1A3 /* ReportCreatViewController.h */,
+				307026CE229AA4F000D0B1A3 /* ReportCreatViewController.m */,
 				30A75279228FD1EF00836EBF /* Main.storyboard */,
 				30A7527C228FD1F000836EBF /* Assets.xcassets */,
 				30A7527E228FD1F000836EBF /* LaunchScreen.storyboard */,
@@ -209,7 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307026D7229AE52A00D0B1A3 /* User.m in Sources */,
+				307026CF229AA4F000D0B1A3 /* ReportCreatViewController.m in Sources */,
 				30A75283228FD1F000836EBF /* main.m in Sources */,
+				307026DA229AE58700D0B1A3 /* Pet.m in Sources */,
+				307026C6229A98D400D0B1A3 /* HomeTableViewController.m in Sources */,
 				30A75275228FD1EF00836EBF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
