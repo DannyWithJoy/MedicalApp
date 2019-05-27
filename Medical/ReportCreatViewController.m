@@ -9,6 +9,8 @@
 #import "ReportCreatViewController.h"
 #import "XLForm.h"
 #import "User.h"
+#import "SCLAlertView.h"
+#import "Realm.h"
 
 @interface ReportCreatViewController ()
 
@@ -152,7 +154,93 @@
 #pragma mark - Save
 - (void)saveBtnClicked {
     // validation
+    if (!self.ownerPhoneRow.value || [(NSString *)self.ownerPhoneRow.value length] != 11) {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        [alert showWarning:self title:@"输入错误" subTitle:@"【主人手机号】输入错误" closeButtonTitle:@"OK" duration:0.0f];
+        return;
+    }
     
+    if (!self.ownerNameRow.value) {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        [alert showWarning:self title:@"输入错误" subTitle:@"【主人名称】输入错误" closeButtonTitle:@"OK" duration:0.0f];
+        return;
+    }
+    
+    if (!self.petSpeciesRow.value) {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        [alert showWarning:self title:@"输入错误" subTitle:@"【宠物种类】未选择" closeButtonTitle:@"OK" duration:0.0f];
+        return;
+    }
+    
+    if (!self.petNameRow.value) {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        [alert showWarning:self title:@"输入错误" subTitle:@"【宠物名称】输入错误" closeButtonTitle:@"OK" duration:0.0f];
+        return;
+    }
+    
+    if (!self.checkItemRow.value) {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        [alert showWarning:self title:@"输入错误" subTitle:@"【检查项目】未选择" closeButtonTitle:@"OK" duration:0.0f];
+        return;
+    }
+    
+    if (!self.sampleTypeRow.value) {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        [alert showWarning:self title:@"输入错误" subTitle:@"【样本种类】未选择" closeButtonTitle:@"OK" duration:0.0f];
+        return;
+    }
+    
+    if (!self.report1Row.value ||
+        !self.report2Row.value ||
+        !self.report3Row.value ||
+        !self.report4Row.value ||
+        !self.report5Row.value) {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        [alert showWarning:self title:@"输入错误" subTitle:@"【检查内容】输入错误" closeButtonTitle:@"OK" duration:0.0f];
+        return;
+    }
+    
+    if (!self.reportDateRow.value) {
+        SCLAlertView *alert = [[SCLAlertView alloc] init];
+        [alert showWarning:self title:@"输入错误" subTitle:@"【日期】未选择" closeButtonTitle:@"OK" duration:0.0f];
+        return;
+    }
+    
+    // save
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm beginWriteTransaction];
+    
+    User *user = [[User objectsWhere:@"phone == %@", self.ownerPhoneRow.value] firstObject];
+    if (!user) {
+        user = [[User alloc] init];
+        [realm addObject:user];
+    }
+    user.phone = self.ownerPhoneRow.value;
+    user.name = self.ownerNameRow.value;
+    
+    Pet *pet = [[user.pets objectsWhere:@"name == %@", self.petNameRow.value] firstObject];
+    if (!pet) {
+        pet = [[Pet alloc] init];
+        [user.pets addObject:pet];
+    }
+    pet.species = self.petSpeciesRow.value;
+    pet.name = self.petNameRow.value;
+    
+    SkinExaminationReport *report = [[SkinExaminationReport alloc] init];
+    [pet.skinExaminationReports addObject:report];
+    report.checkItem = self.checkItemRow.value;
+    report.sampleType = self.sampleTypeRow.value;
+    report.checkBacteria = self.report1Row.value;
+    report.checkFungus = self.report2Row.value;
+    report.checkParasite = self.report3Row.value;
+    report.checkHair = self.report4Row.value;
+    report.checkAbnormalCell = self.report5Row.value;
+    report.date = self.reportDateRow.value;
+    
+    [realm commitWriteTransaction];
+    SCLAlertView *alert = [[SCLAlertView alloc] init];
+    [alert showSuccess:self title:@"已保存" subTitle:nil closeButtonTitle:@"OK" duration:0.0f];
+    return;
 }
 
 - (void)ownerMatch {

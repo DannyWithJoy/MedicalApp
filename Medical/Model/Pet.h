@@ -7,13 +7,20 @@
 //
 
 #import "RLMObject.h"
+#import "RLMArray.h"
+#import "SkinExaminationReport.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+RLM_ARRAY_TYPE(SkinExaminationReport)
+
 
 @interface Pet : RLMObject
 
 @property NSString *species;
 @property NSString *name;
+
+@property RLMArray<SkinExaminationReport> *skinExaminationReports;
 
 @end
 

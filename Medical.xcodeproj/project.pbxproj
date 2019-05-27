@@ -11,6 +11,7 @@
 		307026CF229AA4F000D0B1A3 /* ReportCreatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307026CE229AA4F000D0B1A3 /* ReportCreatViewController.m */; };
 		307026D7229AE52A00D0B1A3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 307026D6229AE52A00D0B1A3 /* User.m */; };
 		307026DA229AE58700D0B1A3 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 307026D9229AE58700D0B1A3 /* Pet.m */; };
+		307026DD229C0B9F00D0B1A3 /* SkinExaminationReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 307026DC229C0B9F00D0B1A3 /* SkinExaminationReport.m */; };
 		30A75275228FD1EF00836EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A75274228FD1EF00836EBF /* AppDelegate.m */; };
 		30A7527B228FD1EF00836EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A75279228FD1EF00836EBF /* Main.storyboard */; };
 		30A7527D228FD1F000836EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A7527C228FD1F000836EBF /* Assets.xcassets */; };
@@ -29,6 +30,8 @@
 		307026D6229AE52A00D0B1A3 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		307026D8229AE58700D0B1A3 /* Pet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
 		307026D9229AE58700D0B1A3 /* Pet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
+		307026DB229C0B9F00D0B1A3 /* SkinExaminationReport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkinExaminationReport.h; sourceTree = "<group>"; };
+		307026DC229C0B9F00D0B1A3 /* SkinExaminationReport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkinExaminationReport.m; sourceTree = "<group>"; };
 		30A75270228FD1EF00836EBF /* Medical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A75273228FD1EF00836EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30A75274228FD1EF00836EBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +63,8 @@
 				307026D6229AE52A00D0B1A3 /* User.m */,
 				307026D8229AE58700D0B1A3 /* Pet.h */,
 				307026D9229AE58700D0B1A3 /* Pet.m */,
+				307026DB229C0B9F00D0B1A3 /* SkinExaminationReport.h */,
+				307026DC229C0B9F00D0B1A3 /* SkinExaminationReport.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 				30A75283228FD1F000836EBF /* main.m in Sources */,
 				307026DA229AE58700D0B1A3 /* Pet.m in Sources */,
 				307026C6229A98D400D0B1A3 /* HomeTableViewController.m in Sources */,
+				307026DD229C0B9F00D0B1A3 /* SkinExaminationReport.m in Sources */,
 				30A75275228FD1EF00836EBF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
